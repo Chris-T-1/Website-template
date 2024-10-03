@@ -211,6 +211,9 @@ a:focus {
 
 .shop_section .box .img-box img {
   width: 1000px;
+  padding: 110px;
+  margin-top: 45px;
+  margin-bottom: 20px;
 }
 
 .shop_section .box .btn-box {
@@ -236,7 +239,8 @@ a:focus {
 }
 
 .about_section .img-box img {
-  width: 100%;
+  margin-left: 35%;
+  max-height: 500px;
   -webkit-transform: translateX(45px);
           transform: translateX(45px);
 }
