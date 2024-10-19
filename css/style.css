@@ -3,6 +3,11 @@ body {
   color: #040000;
   background-color: #ffffff;
 }
+
+.checked {
+  color: orange;
+}
+
 .fruit_container .box{
   height: 300px;
 }
