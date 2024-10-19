@@ -1,506 +1,537 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
-<head>
-  <!-- Basic -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
+    <title>Photographier</title>
 
-  <title>Photographier</title>
+    <!-- slider stylesheet -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css"
+    />
 
-  <!-- slider stylesheet -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
-  <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <!-- fonts style -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Dosis:400,600,700|Poppins:400,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
 
-  <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Dosis:400,600,700|Poppins:400,600,700&display=swap" rel="stylesheet" />
-  <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
-</head>
+    <link rel="stylesheet/scss" type="text/scss" href="style.scss">
+  </head>
 
-<body>
-  <div class="hero_area">
-    <!-- header section strats -->
-    <div class="brand_box">
-      <a class="navbar-brand" href="index.html">
-        <span>
-          Photographier
-        </span>
-      </a>
-    </div>
-    <!-- end header section -->
-    <!-- slider section -->
-    <section class=" slider_section position-relative">
-      <div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="img-box">
-              <img src="images/slider/pexels-hikaique-307847.jpg" alt="">
+  <body>
+    <div class="hero_area">
+      <!-- header section strats -->
+      <div class="brand_box">
+        <a class="navbar-brand" href="index.html">
+          <span> Photographier </span>
+        </a>
+      </div>
+      <!-- end header section -->
+      <!-- slider section -->
+      <section class="slider_section position-relative">
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="img-box">
+                <img src="images/slider/pexels-hikaique-307847.jpg" alt="" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="img-box">
+                <img src="images/slider/pexels-david-bartus-43782-610293.jpg" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="img-box">
+                <img
+                  src="images/slider/pexels-andre-furtado-43594-1264210.jpg"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <div class="img-box">
-              <img src="images/slider/pexels-david-bartus-43782-610293.jpg">
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="img-box">
-              <img src="images/slider/pexels-andre-furtado-43594-1264210.jpg" alt="">
-            </div>
-          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleControls"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleControls"
+            role="button"
+            data-slide="next"
+          >
+            <span class="sr-only">Next</span>
+          </a>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-          <span class="sr-only">Next</span>
-        </a>
+      </section>
+      <!-- end slider section -->
+    </div>
+
+    <!-- nav section -->
+
+    <section class="nav_section">
+      <div class="container">
+        <div class="custom_nav2">
+          <nav class="navbar navbar-expand custom_nav-container">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="d-flex flex-column flex-lg-row align-items-center">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html"
+                      >Home <span class="sr-only">(current)</span></a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="fruit.html">Our Fruit </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="testimonial.html">Testimonial</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Login</a>
+                  </li>
+                </ul>
+                <form
+                  class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0"
+                >
+                  <button
+                    class="btn my-2 my-sm-0 nav_search-btn"
+                    type="submit"
+                  ></button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </div>
       </div>
     </section>
-    <!-- end slider section -->
-  </div>
 
-  <!-- nav section -->
+    <!-- end nav section -->
 
-  <section class="nav_section">
-    <div class="container">
-      <div class="custom_nav2">
-        <nav class="navbar navbar-expand custom_nav-container ">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+    <!-- shop section -->
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="d-flex  flex-column flex-lg-row align-items-center">
-              <ul class="navbar-nav  ">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html">About </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="fruit.html">Our Fruit </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="testimonial.html">Testimonial</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact Us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Login</a>
-                </li>
-              </ul>
-              <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
-                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
-              </form>
+    <section class="shop_section layout_padding">
+      <div class="container">
+        <div class="box">
+          <div class="detail-box">
+            <h2>Photographs</h2>
+            <p>
+              There are many variations of passages of Lorem Ipsum available
+            </p>
+          </div>
+          <div class="img-box">
+            <img src="images/digital-marketing-photography.jpg" alt="" />
+          </div>
+          <div class="btn-box">
+            <a href=""> Buy Now </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end shop section -->
+
+    <!-- about section -->
+
+    <section class="about_section">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 px-0">
+            <div class="img-box">
+              <img src="images/Studio-door.jpg" alt="" />
             </div>
           </div>
-        </nav>
+          <div class="col-md-5">
+            <div class="detail-box">
+              <div class="heading_container">
+                <hr />
+                <h2>About Our Us</h2>
+              </div>
+              <p>
+                  Welcome to Photographier, a newly established photography agency capturing the beauty of the world through stunning images.
+                  From nature and wildlife to bustling cities and expressive portraits, our photographers bring every scene to life. 
+                  Browse our curated collection or let us capture your unique vision. 
+                <span id="dots">...</span>
+                <span id="more">
+                  At Photographier, we believe every photo tells a story.
+                  Our passion for detail and creativity shines through in each image, whether it's a serene landscape or a lively urban scene. 
+                  Let us help you preserve moments that inspire, with customized photo projects or ready-to-purchase prints.
+                </span>
+              </p>
+
+              <button onclick="myFunction()" id="myBtn">Read more</button>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- end nav section -->
+    <!-- end about section -->
 
-  <!-- shop section -->
+    <!-- fruit section -->
 
-  <section class="shop_section layout_padding">
-    <div class="container">
-      <div class="box">
-        <div class="detail-box">
-          <h2>
-            Photographs
-          </h2>
-          <p>
-            There are many variations of passages of Lorem Ipsum available
-          </p>
+    <section class="fruit_section layout_padding">
+      <div class="container">
+        <div class="heading_container">
+          <hr />
+          <h2>Some of Our collection</h2>
         </div>
-        <div class="img-box">
-          <img src="images/digital-marketing-photography.jpg" alt="">
+      </div>
+      <div class="container-fluid">
+        <div class="fruit_container">
+          <div class="box">
+            <img src="images/Nature/mountain-nature.jpg" alt="" />
+            <div class="link_box">
+              <h5>Mountain man</h5>
+              <a href=""> Buy Now </a>
+            </div>
+          </div>
+          <div class="box">
+            <img
+              src="images/Nature/Guest-with-camera-gear-on-safari-in-Botswana-Pangolin-Photo-Safaris-scaled.webp"
+              alt=""
+            />
+            <div class="link_box">
+              <h5>Blueberry</h5>
+              <a href=""> Buy Now </a>
+            </div>
+          </div>
+          <div class="box">
+            <img
+              src="images/Nature/annie-spratt-ogDort6vKuE-unsplash-1024x682.jpg"
+              alt=""
+            />
+            <div class="link_box">
+              <h5>Banana</h5>
+              <a href=""> Buy Now </a>
+            </div>
+          </div>
+          <div class="box">
+            <img src="images/Animal/depositphotos_36220949-stock-photo-beautiful-landscape.jpg" alt="" />
+            <div class="link_box">
+              <h5>Apple</h5>
+              <a href=""> Buy Now </a>
+            </div>
+          </div>
+          <div class="box">
+            <img src="images/Animal/parrot-3601194_640.jpg" alt="" />
+            <div class="link_box">
+              <h5>Mango</h5>
+              <a href=""> Buy Now </a>
+            </div>
+          </div>
+          <div class="box">
+            <img src="images/Animal/pexels-belle-co-99483-847393.jpg" alt="" />
+            <div class="link_box">
+              <h5>Strawberry</h5>
+              <a href=""> Buy Now </a>
+            </div>
+          </div>
         </div>
-        <div class="btn-box">
-          <a href="">
-            Buy Now
+      </div>
+    </section>
+
+    <!-- end fruit section -->
+
+    <!-- client section -->
+
+    <section class="client_section layout_padding-bottom">
+      <div class="container">
+        <div class="heading_container">
+          <h2>Costumer reviews</h2>
+          <hr />
+        </div>
+        <div
+          id="carouselExample2Controls"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="client_container layout_padding-top">
+                <div class="img-box">
+                  <img src="images/client-img.png" alt="" />
+                </div>
+                <div class="detail-box">
+                  <h5>Jone Mark</h5>
+                  <p>
+                    <img src="images/left-quote.png" alt="" />
+                    <span> 8/10 </span>
+                    Photographier exceeded all my expectations! I wanted a set of nature shots for my home, and their collection was breathtaking. 
+                    The colors were so vivid, and each photo had such an artistic touch. The ordering process was simple, and my prints arrived quickly and in perfect condition.
+                    Highly recommended for anyone looking for professional, high-quality photography!
+                    <img src="images/right-quote.png" alt="" /> <br/>
+                  </p>
+
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="client_container layout_padding-top">
+                <div class="img-box">
+                  <img src="images/client-img.png" alt="" />
+                </div>
+                <div class="detail-box">
+                  <h5>Jone Mark</h5>
+                  <p>
+                    <img src="images/left-quote.png" alt="" />
+                    <span> Lorem ipsum dolor sit amet, </span>
+                    <img src="images/right-quote.png" alt="" /> <br />
+                    I recently commissioned Photographier for a portrait session, and I couldn't be happier with the results. 
+                    They captured me so naturally, and the lighting was just perfect. 
+                    The photographers were incredibly patient and easy to work with, making the whole experience enjoyable. 
+                    I’ve already gotten so many compliments on the final shots. Will definitely come back for future projects!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="client_container layout_padding-top">
+                <div class="img-box">
+                  <img src="images/client-img.png" alt="" />
+                </div>
+                <div class="detail-box">
+                  <h5>Jone Mark</h5>
+                  <p>
+                    <img src="images/left-quote.png" alt="" />
+                    <span> Lorem ipsum dolor sit amet, </span>
+                    <img src="images/right-quote.png" alt="" /> <br />
+                    I was searching for unique cityscape photos to use in my office, and Photographier had exactly what I needed. 
+                    Their images are vibrant and capture the energy of each location beautifully. The attention to detail really shows, 
+                    and the quality of the prints is excellent. 
+                    It’s clear they have a passion for their craft. Couldn’t be more satisfied with my purchase!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExample2Controls"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExample2Controls"
+            role="button"
+            data-slide="next"
+          >
+            <span class="sr-only">Next</span>
           </a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- end shop section -->
+    <!-- end client section -->
 
-  <!-- about section -->
-
-  <section class="about_section">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-6 px-0">
-          <div class="img-box">
-            <img src="images/Studio-door.jpg" alt="">
-          </div>
-        </div>
-        <div class="col-md-5">
-          <div class="detail-box">
-            <div class="heading_container">
-              <hr>
-              <h2>
-                About Our Fruit Shop
-              </h2>
-            </div>
-            <p>
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour
-            </p>
-            <a href="">
-              Read More
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- end about section -->
-
-  <!-- fruit section -->
-
-  <section class="fruit_section layout_padding">
-    <div class="container">
-      <div class="heading_container">
-        <hr>
-        <h2>
-          Some of Our collection
-        </h2>
-      </div>
-    </div>
-    <div class="container-fluid">
-
-      <div class="fruit_container">
-        <div class="box">
-          <img src="images/Nature/mountain-nature.jpg" alt="">
-          <div class="link_box">
-            <h5>
-              Mountain man
-            </h5>
-            <a href="">
-              Buy Now
-            </a>
-          </div>
-        </div>
-        <div class="box">
-          <img src="images/Nature/Guest-with-camera-gear-on-safari-in-Botswana-Pangolin-Photo-Safaris-scaled.webp" alt="">
-          <div class="link_box">
-            <h5>
-              Blueberry
-            </h5>
-            <a href="">
-              Buy Now
-            </a>
-          </div>
-        </div>
-        <div class="box">
-          <img src="images/Nature/annie-spratt-ogDort6vKuE-unsplash-1024x682.jpg" alt="">
-          <div class="link_box">
-            <h5>
-              Banana
-            </h5>
-            <a href="">
-              Buy Now
-            </a>
-          </div>
-        </div>
-        <div class="box">
-          <img src="images/f-4.jpg" alt="">
-          <div class="link_box">
-            <h5>
-              Apple
-            </h5>
-            <a href="">
-              Buy Now
-            </a>
-          </div>
-        </div>
-        <div class="box">
-          <img src="images/f-5.jpg" alt="">
-          <div class="link_box">
-            <h5>
-              Mango
-            </h5>
-            <a href="">
-              Buy Now
-            </a>
-          </div>
-        </div>
-        <div class="box">
-          <img src="images/f-6.jpg" alt="">
-          <div class="link_box">
-            <h5>
-              Strawberry
-            </h5>
-            <a href="">
-              Buy Now
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- end fruit section -->
-
-
-  <!-- client section -->
-
-  <section class="client_section layout_padding-bottom">
-    <div class="container ">
-      <div class="heading_container">
-        <h2>
-          What Syas Cutomer
-        </h2>
-        <hr>
-      </div>
-      <div id="carouselExample2Controls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="client_container layout_padding-top">
-              <div class="img-box">
-                <img src="images/client-img.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Jone Mark
-                </h5>
-                <p>
-                  <img src="images/left-quote.png" alt="">
-                  <span>
-                    Lorem ipsum dolor sit amet,
-                  </span>
-                  <img src="images/right-quote.png" alt=""> <br>
-                  consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                  veniam, quis nostrud exercitation ullamco laboris ut aliquip ex ea commodo
-                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="client_container layout_padding-top">
-              <div class="img-box">
-                <img src="images/client-img.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Jone Mark
-                </h5>
-                <p>
-                  <img src="images/left-quote.png" alt="">
-                  <span>
-                    Lorem ipsum dolor sit amet,
-                  </span>
-                  <img src="images/right-quote.png" alt=""> <br>
-                  consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                  veniam, quis nostrud exercitation ullamco laboris ut aliquip ex ea commodo
-                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="client_container layout_padding-top">
-              <div class="img-box">
-                <img src="images/client-img.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Jone Mark
-                </h5>
-                <p>
-                  <img src="images/left-quote.png" alt="">
-                  <span>
-                    Lorem ipsum dolor sit amet,
-                  </span>
-                  <img src="images/right-quote.png" alt=""> <br>
-                  consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                  veniam, quis nostrud exercitation ullamco laboris ut aliquip ex ea commodo
-                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExample2Controls" role="button" data-slide="prev">
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExample2Controls" role="button" data-slide="next">
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- end client section -->
-
-
-  <!-- contact section -->
-  <section class="contact_section layout_padding-bottom">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="offset-lg-2 col-md-10 offset-md-1">
-          <div class="heading_container">
-            <hr>
-            <h2>
-              Request A call back
-            </h2>
-          </div>
-        </div>
-      </div>
-
-      <div class="layout_padding2-top">
+    <!-- contact section -->
+    <section class="contact_section layout_padding-bottom">
+      <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-4 offset-lg-2 col-md-5 offset-md-1">
-            <form action="">
-              <div class="contact_form-container">
-                <div>
+          <div class="offset-lg-2 col-md-10 offset-md-1">
+            <div class="heading_container">
+              <hr />
+              <h2>Request A call back</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="layout_padding2-top">
+          <div class="row">
+            <div class="col-lg-4 offset-lg-2 col-md-5 offset-md-1">
+              <form action="">
+                <div class="contact_form-container">
                   <div>
-                    <input type="text" placeholder="Full Name" />
-                  </div>
-                  <div>
-                    <input type="email" placeholder="Email" />
-                  </div>
-                  <div>
-                    <input type="text" placeholder="Phone Number" />
-                  </div>
-                  <div>
-                    <input type="text" class="message_input" placeholder="Message" />
-                  </div>
-                  <div>
-                    <button type="submit">
-                      Send
-                    </button>
+                    <div>
+                      <input type="text" placeholder="Full Name" />
+                    </div>
+                    <div>
+                      <input type="email" placeholder="Email" />
+                    </div>
+                    <div>
+                      <input type="text" placeholder="Phone Number" />
+                    </div>
+                    <div>
+                      <input
+                        type="text"
+                        class="message_input"
+                        placeholder="Message"
+                      />
+                    </div>
+                    <div>
+                      <button type="submit">Send</button>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </form>
-          </div>
-          <div class="col-md-6 px-0">
-            <div class="map_container">
-              <div class="map-responsive">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d438.08240869516266!2d11.937150280361653!3d57.70960389347176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464ff350f0045011%3A0x1d2e70414ffe1838!2sKarlavagnsgatan%207%2C%20417%2052%20G%C3%B6teborg!5e0!3m2!1ssv!2sse!4v1728383842138!5m2!1ssv!2sse" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </form>
+            </div>
+            <div class="col-md-6 px-0">
+              <div class="map_container">
+                <div class="map-responsive">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d438.08240869516266!2d11.937150280361653!3d57.70960389347176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464ff350f0045011%3A0x1d2e70414ffe1838!2sKarlavagnsgatan%207%2C%20417%2052%20G%C3%B6teborg!5e0!3m2!1ssv!2sse!4v1728383842138!5m2!1ssv!2sse"
+                    width="600"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- end contact section -->
+    </section>
+    <!-- end contact section -->
 
+    <!-- info section -->
 
-  <!-- info section -->
-
-  <section class="info_section layout_padding">
-    <div class="container">
-      <div class="info_logo">
-        <h2>
-          NiNom
-        </h2>
-      </div>
-      <div class="info_contact">
+    <section class="info_section layout_padding">
+      <div class="container">
+        <div class="info_logo">
+          <h2>Photographier</h2>
+        </div>
+        <div class="info_contact">
+          <div class="row">
+            <div class="col-md-4">
+              <a href="">
+                <img src="images/location.png" alt="" />
+                <span> Passages of Karlavagnsgatan 7, Gothenburg </span>
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="">
+                <img src="images/call.png" alt="" />
+                <span> Call : +46 0707112233 </span>
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="">
+                <img src="images/mail.png" alt="" />
+                <span> Photographier@Amerikanskagymnasiet.se </span>
+              </a>
+            </div>
+          </div>
+        </div>
         <div class="row">
-          <div class="col-md-4">
-            <a href="">
-              <img src="images/location.png" alt="">
-              <span>
-                Passages of Lorem Ipsum available
-              </span>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="">
-              <img src="images/call.png" alt="">
-              <span>
-                Call : +012334567890
-              </span>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="">
-              <img src="images/mail.png" alt="">
-              <span>
-                demo@gmail.com
-              </span>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-8 col-lg-9">
-          <div class="info_form">
-            <form action="">
-              <input type="text" placeholder="Enter your email">
-              <button>
-                subscribe
-              </button>
-            </form>
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-3">
-          <div class="info_social">
-            <div>
-              <a href="">
-                <img src="images/facebook-logo-button.png" alt="">
-              </a>
+          <div class="col-md-8 col-lg-9">
+            <div class="info_form">
+              <form action="">
+                <input type="text" placeholder="Enter your email" />
+                <button>subscribe</button>
+              </form>
             </div>
-            <div>
-              <a href="">
-                <img src="images/twitter-logo-button.png" alt="">
-              </a>
-            </div>
-            <div>
-              <a href="">
-                <img src="images/linkedin.png" alt="">
-              </a>
-            </div>
-            <div>
-              <a href="">
-                <img src="images/instagram.png" alt="">
-              </a>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <div class="info_social">
+              <div>
+                <a href="">
+                  <img src="images/facebook-logo-button.png" alt="" />
+                </a>
+              </div>
+              <div>
+                <a href="">
+                  <img src="images/twitter-logo-button.png" alt="" />
+                </a>
+              </div>
+              <div>
+                <a href="">
+                  <img src="images/linkedin.png" alt="" />
+                </a>
+              </div>
+              <div>
+                <a href="">
+                  <img src="images/instagram.png" alt="" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </section>
 
-    </div>
-  </section>
+    <!-- end info section -->
 
-  <!-- end info section -->
+    <!-- footer section -->
+    <section class="container-fluid footer_section">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved. Design by
+        <a href="https://html.design/">Free Html Templates</a>
+      </p>
+    </section>
+    <!-- footer section -->
 
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script>
+    function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
 
-  <!-- footer section -->
-  <section class="container-fluid footer_section ">
-    <p>
-      &copy; <span id="displayYear"></span> All Rights Reserved. Design by
-      <a href="https://html.design/">Free Html Templates</a>
-    </p>
-  </section>
-  <!-- footer section -->
-
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.js"></script>
-  <script type="text/javascript" src="js/custom.js"></script>
-
-</body>
-
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "inline";
+      }
+    }
+    </script>
+  </body>
 </html>

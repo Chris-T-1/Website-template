@@ -3,6 +3,9 @@ body {
   color: #040000;
   background-color: #ffffff;
 }
+.fruit_container .box{
+  height: 300px;
+}
 
 .layout_padding {
   padding: 90px 0;
@@ -58,10 +61,12 @@ body {
   font-size: 39px;
   font-weight: bold;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: #252525;
+  color: #f9f4f4;
   text-transform: uppercase;
-  padding: 2px;
-  background-color: #f8a01287;
+  font-weight: 500;
+  padding: 5px 20px;
+  background-color: #25252598;
+  border-radius: 8px;
 }
 
 a,
@@ -264,9 +269,9 @@ a:focus {
 }
 
 .about_section .detail-box .heading_container hr {
-  width: 1px;
-  height: 145px;
-  margin: 0;
+  width: 2px;
+  height: 90px;
+  margin-top: -4px;
   border: none;
   background-color: #b7b7b7;
   margin-bottom: 10px;
@@ -735,3 +740,7 @@ a:focus {
 
 /* end footer section*/
 /*# sourceMappingURL=style.css.map */
+
+#more {
+  display: none;
+}
