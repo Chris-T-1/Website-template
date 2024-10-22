@@ -1,9 +1,21 @@
-body {
+body {  
   font-family: "Poppins", sans-serif;
   color: #040000;
   background-color: #ffffff;
 }
 
+.custom-alert {
+  position: fixed;
+  top: 10%;
+  left: 40%;
+  padding: 25px 140px 25px 140px;
+  background-color: rgba(25, 25, 25, 0.534);
+  border: 3px solid #000000;
+  border-radius: 5px;
+  z-index: 1000;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+}
 .checked {
   color: orange;
 }

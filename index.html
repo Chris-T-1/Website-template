@@ -418,27 +418,23 @@
         <div class="layout_padding2-top">
           <div class="row">
             <div class="col-lg-4 offset-lg-2 col-md-5 offset-md-1">
-              <form action="">
+              <form action="" id="contactForm">
                 <div class="contact_form-container">
                   <div>
                     <div>
-                      <input type="text" placeholder="Full Name" />
+                      <input type="text" placeholder="Full Name" required />
                     </div>
                     <div>
-                      <input type="email" placeholder="Email" />
+                      <input type="email" placeholder="Email" required />
                     </div>
                     <div>
                       <input type="text" placeholder="Phone Number" />
                     </div>
                     <div>
-                      <input
-                        type="text"
-                        class="message_input"
-                        placeholder="Message"
-                      />
+                      <input type="text" class="message_input" placeholder="Message" required />
                     </div>
                     <div>
-                      <button type="submit">Send</button>
+                      <button type="submit" id="sendButton">Send</button>
                     </div>
                   </div>
                 </div>
@@ -498,7 +494,12 @@
           <div class="col-md-8 col-lg-9">
             <div class="info_form">
               <form action="">
-                <input type="text" placeholder="Enter your email" />
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Enter your email"
+                  required
+                />
                 <button>subscribe</button>
               </form>
             </div>
@@ -561,6 +562,34 @@
           moreText.style.display = "inline";
         }
       }
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          document.getElementById("sendButton").addEventListener("click", function (event) {
+              const form = this.closest("form"); // Get the closest form element
+
+              // Check if the form is valid
+              if (form.checkValidity()) {
+                  event.preventDefault(); // Prevent the default form submission
+
+                  // Create custom alert and apply a class
+                  const customAlert = document.createElement('div');
+                  customAlert.textContent = "Message sent! We will get back to you soon!";
+                  customAlert.classList.add('custom-alert');
+
+                  // Append the alert to the form or body
+                  document.body.appendChild(customAlert);
+
+                  // Remove the alert after 3 seconds
+                  setTimeout(function () {
+                      customAlert.remove();
+                  }, 3000);
+              } else {
+                  // Let the form show the built-in validation messages
+                  form.reportValidity(); 
+              }
+          });
+      });
     </script>
   </body>
 </html>
