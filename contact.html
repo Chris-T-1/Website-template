@@ -147,7 +147,7 @@
                       />
                     </div>
                     <div>
-                      <button type="submit">Send</button>
+                      <button type="submit" id="sendButton">Send</button>
                     </div>
                   </div>
                 </div>
@@ -212,7 +212,7 @@
                   placeholder="Enter your email"
                   required
                 />
-                <button>subscribe</button>
+                <button type="button" id="subscribeButton">Subscribe</button>
               </form>
             </div>
           </div>
@@ -259,5 +259,53 @@
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Function to handle button clicks
+        function handleButtonClick(buttonType, event) {
+          // Added event parameter
+          const form = event.target.closest("form"); // Get the closest form element
+
+          // Check if the form is valid
+          if (form.checkValidity()) {
+            // Prevent the default form submission
+            event.preventDefault();
+
+            // Create custom alert and apply a class
+            const customAlert = document.createElement("div");
+            customAlert.textContent =
+              buttonType === "subscribe"
+                ? "Thank you for subscribing."
+                : "Message sent! We will get back to you soon!";
+            customAlert.classList.add("custom-alert");
+
+            // Append the alert to the body
+            document.body.appendChild(customAlert);
+
+            // Remove the alert after 3 seconds
+            setTimeout(function () {
+              customAlert.remove();
+            }, 3000);
+          } else {
+            // Let the form show the built-in validation messages
+            form.reportValidity();
+          }
+        }
+
+        // Event listener for Send button
+        document
+          .getElementById("sendButton")
+          .addEventListener("click", function (event) {
+            handleButtonClick("send", event); // Pass the event
+          });
+
+        // Event listener for Subscribe button
+        document
+          .getElementById("subscribeButton")
+          .addEventListener("click", function (event) {
+            handleButtonClick("subscribe", event); // Pass the event
+          });
+      });
+    </script>
   </body>
 </html>

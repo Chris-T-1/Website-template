@@ -259,7 +259,7 @@
             <div class="info_form">
               <form action="">
                 <input type="email" id="email" placeholder="Enter your email" required />
-                <button>subscribe</button>
+                <button type="button" id="subscribeButton">Subscribe</button>
               </form>
             </div>
           </div>
@@ -305,5 +305,33 @@
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+                document.getElementById("subscribeButton").addEventListener("click", function (event) {
+                    const form = this.closest("form"); // Get the closest form element
+  
+                    // Check if the form is valid
+                    if (form.checkValidity()) {
+                        event.preventDefault(); // Prevent the default form submission
+  
+                        // Create custom alert and apply a class
+                        const customAlert = document.createElement('div');
+                        customAlert.textContent = "Thank you for subscribing.";
+                        customAlert.classList.add('custom-alert');
+  
+                        // Append the alert to the form or body
+                        document.body.appendChild(customAlert);
+  
+                        // Remove the alert after 3 seconds
+                        setTimeout(function () {
+                            customAlert.remove();
+                        }, 3000);
+                    } else {
+                        // Let the form show the built-in validation messages
+                        form.reportValidity(); 
+                    }
+                });
+            });
+      </script>
   </body>
 </html>
