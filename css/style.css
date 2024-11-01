@@ -13,6 +13,15 @@ body {
 /*.hero_section :hover {
 }
 */
+
+.Collection_section .id {
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+  margin: -20px 100px 10px 100px;
+  padding: 4px;
+  background-color: #252525e0;
+}
 .custom-alert {
   position: fixed;
   top: 10%;
