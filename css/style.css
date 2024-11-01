@@ -4,6 +4,15 @@ body {
   background-color: #ffffff;
 }
 
+.hero_section {
+  background-color: #ac9784;  
+  height: 210px;
+  background-image: url(../images/Animal/Elk-Line-16x40_768.jpg);
+  
+}
+/*.hero_section :hover {
+}
+*/
 .custom-alert {
   position: fixed;
   top: 10%;
@@ -20,7 +29,7 @@ body {
   color: orange;
 }
 
-.fruit_container .box{
+.Collection_container .box{
   height: 300px;
 }
 
@@ -51,7 +60,6 @@ body {
 /*header section*/
 .sub_page .brand_box {
   position: relative;
-  background-image: url(../images/Guest-with-camera-gear-on-safari-in-Botswana-Pangolin-Photo-Safaris-scaled.webp);
   padding: 45px 0;
 }
 
@@ -312,7 +320,7 @@ a:focus {
   color: #313131;
 }
 
-.fruit_section .heading_container {
+.Collection_section .heading_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -322,7 +330,7 @@ a:focus {
   margin-bottom: 35px;
 }
 
-.fruit_section .heading_container hr {
+.Collection_section .heading_container hr {
   width: 20%;
   height: 1px;
   border: none;
@@ -331,11 +339,11 @@ a:focus {
   background-color: #b7b7b7;
 }
 
-.fruit_section .heading_container h2 {
+.Collection_section .heading_container h2 {
   margin: 0;
 }
 
-.fruit_section .fruit_container {
+.Collection_section .Collection_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -346,7 +354,7 @@ a:focus {
           justify-content: center;
 }
 
-.fruit_section .fruit_container .box {
+.Collection_section .Collection_container .box {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 31.33%;
           flex: 0 0 31.33%;
@@ -355,11 +363,11 @@ a:focus {
   overflow: hidden;
 }
 
-.fruit_section .fruit_container .box img {
+.Collection_section .Collection_container .box img {
   width: 100%;
 }
 
-.fruit_section .fruit_container .box .link_box {
+.Collection_section .Collection_container .box .link_box {
   position: absolute;
   left: 0;
   top: 100%;
@@ -385,12 +393,12 @@ a:focus {
   transition: all 0.3s;
 }
 
-.fruit_section .fruit_container .box .link_box h5 {
+.Collection_section .Collection_container .box .link_box h5 {
   text-transform: uppercase;
   margin-bottom: 25px;
 }
 
-.fruit_section .fruit_container .box .link_box a {
+.Collection_section .Collection_container .box .link_box a {
   display: inline-block;
   padding: 7px 35px;
   border: 1px solid #ffffff;
@@ -398,12 +406,12 @@ a:focus {
   font-size: 15px;
 }
 
-.fruit_section .fruit_container .box .link_box a:hover {
+.Collection_section .Collection_container .box .link_box a:hover {
   background-color: #ffffff;
   color: #000000;
 }
 
-.fruit_section .fruit_container .box:hover .link_box {
+.Collection_section .Collection_container .box:hover .link_box {
   top: 0;
   opacity: 0.9;
 }
@@ -629,9 +637,11 @@ a:focus {
 }
 
 .info_section .info_contact {
-  margin-top: 60px;
+  margin-top: 60px; 
   margin-bottom: 45px;
-}
+  width: 110%;
+  margin-left: -5%;
+  }
 
 .info_section .info_contact .col-md-4 {
   display: -webkit-box;
@@ -648,12 +658,14 @@ a:focus {
 
 .info_section .info_contact img {
   max-width: 100%;
-  margin-right: 10px;
+  margin-right: 2px;
 }
 
 .info_section .info_form {
   margin: 0 auto;
   margin-bottom: 45px;
+  margin-left: -7%;
+  margin-right: 2%;
 }
 
 .info_section .info_form h4 {
@@ -735,14 +747,14 @@ a:focus {
 
 .info_section .info_social img {
   width: 35px;
-  margin-right: 8px;
-}
+  margin-right: 6px;
+} 
 
 /* end info section */
 /* footer section*/
 .footer_section {
   background-color: #ffffff;
-  padding: 20px 15px;
+  padding: 10px 15px;
 }
 
 .footer_section p {

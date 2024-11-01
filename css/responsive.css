@@ -51,7 +51,7 @@
         margin-top: 75px;
     }
 
-    .fruit_section .fruit_container .box {
+    .Collection_section .Collection_container .box {
         flex: 0 0 47%;
         margin: 1.5%;
     }
@@ -87,7 +87,7 @@
         flex-basis: 50%;
     }
 
-    .fruit_section .fruit_container .box {
+    .Collection_section .Collection_container .box {
         flex: 0 0 97%;
         margin: 3% 1.5%;
     }

@@ -39,16 +39,17 @@
   </head>
 
   <body class="sub_page">
-    <div class="hero_area">
-      <!-- header section strats -->
-      <div class="brand_box">
-        <a class="navbar-brand" href="index.html">
-          <span> Photographier </span>
-        </a>
+    <section class="hero_section">
+      <div class="hero_area">
+        <!-- header section strats -->
+        <div class="brand_box">
+          <a class="navbar-brand" href="index.html">
+            <span> Photographier </span>
+          </a>
+        </div>
+        <!-- end header section -->
       </div>
-      <!-- end header section -->
-    </div>
-
+    </section>
     <!-- nav section -->
 
     <section class="nav_section">
@@ -79,7 +80,7 @@
                     <a class="nav-link" href="about.html">About </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="fruit.html">Our Fruit </a>
+                    <a class="nav-link" href="collection.html">Our Collection </a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="testimonial.html">Testimonial</a>
@@ -87,18 +88,7 @@
                   <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact Us</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Login</a>
-                  </li>
                 </ul>
-                <form
-                  class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0"
-                >
-                  <button
-                    class="btn my-2 my-sm-0 nav_search-btn"
-                    type="submit"
-                  ></button>
-                </form>
               </div>
             </div>
           </nav>
@@ -113,8 +103,8 @@
     <section class="client_section layout_padding-bottom">
       <div class="container">
         <div class="heading_container">
-          <h2>Costumer reviews</h2>
           <hr />
+          <h2>Costumer reviews</h2>
         </div>
         <div
           id="carouselExample2Controls"
@@ -258,7 +248,12 @@
           <div class="col-md-8 col-lg-9">
             <div class="info_form">
               <form action="">
-                <input type="email" id="email" placeholder="Enter your email" required />
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Enter your email"
+                  required
+                />
                 <button type="button" id="subscribeButton">Subscribe</button>
               </form>
             </div>
@@ -271,7 +266,9 @@
                 </a>
               </div>
               <div>
-                <a href="https://x.com/AmerikanskaSWE/status/1575821238676512770">
+                <a
+                  href="https://x.com/AmerikanskaSWE/status/1575821238676512770"
+                >
                   <img src="images/twitter-logo-button.png" alt="" />
                 </a>
               </div>
@@ -307,31 +304,33 @@
     <script type="text/javascript" src="js/custom.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-                document.getElementById("subscribeButton").addEventListener("click", function (event) {
-                    const form = this.closest("form"); // Get the closest form element
-  
-                    // Check if the form is valid
-                    if (form.checkValidity()) {
-                        event.preventDefault(); // Prevent the default form submission
-  
-                        // Create custom alert and apply a class
-                        const customAlert = document.createElement('div');
-                        customAlert.textContent = "Thank you for subscribing.";
-                        customAlert.classList.add('custom-alert');
-  
-                        // Append the alert to the form or body
-                        document.body.appendChild(customAlert);
-  
-                        // Remove the alert after 3 seconds
-                        setTimeout(function () {
-                            customAlert.remove();
-                        }, 3000);
-                    } else {
-                        // Let the form show the built-in validation messages
-                        form.reportValidity(); 
-                    }
-                });
-            });
-      </script>
+        document
+          .getElementById("subscribeButton")
+          .addEventListener("click", function (event) {
+            const form = this.closest("form"); // Get the closest form element
+
+            // Check if the form is valid
+            if (form.checkValidity()) {
+              event.preventDefault(); // Prevent the default form submission
+
+              // Create custom alert and apply a class
+              const customAlert = document.createElement("div");
+              customAlert.textContent = "Thank you for subscribing.";
+              customAlert.classList.add("custom-alert");
+
+              // Append the alert to the form or body
+              document.body.appendChild(customAlert);
+
+              // Remove the alert after 3 seconds
+              setTimeout(function () {
+                customAlert.remove();
+              }, 3000);
+            } else {
+              // Let the form show the built-in validation messages
+              form.reportValidity();
+            }
+          });
+      });
+    </script>
   </body>
 </html>
