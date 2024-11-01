@@ -16,12 +16,16 @@ body {
 
 .Collection_section .id {
   display: flex;
-  justify-content: space-around;
-  font-size: 20px;
-  margin: -20px 100px 10px 100px;
-  padding: 4px;
+  font-size: 15px;
+  padding: 1px;
   background-color: #252525e0;
-}
+  color: #ffffff;
+} 
+
+.Collection_section .id_parent {
+  padding: 2px #ffffff;
+  border: 2px #646464 dashed;
+} 
 .custom-alert {
   position: fixed;
   top: 10%;
@@ -40,6 +44,7 @@ body {
 
 .Collection_container .box{
   height: 300px;
+  border: 1px dashed #252525;
 }
 
 .layout_padding {
@@ -338,6 +343,9 @@ a:focus {
           align-items: center;
   margin-bottom: 35px;
 }
+.Collection_section .heading_container p {
+margin-left: 15%;
+}
 
 .Collection_section .heading_container hr {
   width: 20%;
@@ -361,6 +369,7 @@ a:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 70px ;
 }
 
 .Collection_section .Collection_container .box {
