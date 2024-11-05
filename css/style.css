@@ -93,13 +93,6 @@ body {
   color: orange;
 }
 
-.Collection_container .box{
-  display: inline-flex;
-  max-height: 400px;
-  border: 1px dashed #252525;
-  overflow: hidden;
-}
-
 .layout_padding {
   padding: 90px 0;
 }
@@ -441,6 +434,11 @@ padding-left: 6px;
 
 .Collection_section .Collection_container .box img {
   width: 100%;
+  display: inline-flex;
+  max-height: 400px;
+  border: 1px dashed #252525;
+  overflow: hidden;
+  min-height: 250px;
 }
 
 .Collection_section .Collection_container .box .link_box {
